@@ -39,14 +39,11 @@ function Footer() {
               <Link href="/rss">RSS feed</Link>
             </li>
             <li>
-              <Link href="/todo">Terms of Use</Link>
+              <Link href="/">Portfolio</Link>
             </li>
             <li>
-              <Link href="/todo">Privacy Policy</Link>
-            </li>
-            <li>
-              <a href="https://twitter.com/JoshWComeau">
-                Twitter
+              <a href="https://www.linkedin.com/in/jaaydenhalko/">
+                LinkedIn
               </a>
             </li>
           </ul>

@@ -10,10 +10,6 @@ async function Home() {
 
   return (
     <div className={styles.wrapper}>
-      <h1 className={styles.mainHeading}>
-        Latest Content:
-      </h1>
-
       {blogPosts.map(({ slug, ...delegated }) => (
         <BlogSummaryCard
           key={slug}
