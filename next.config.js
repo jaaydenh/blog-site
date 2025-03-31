@@ -3,4 +3,5 @@ module.exports = {
     '/*': ['./content/**/*'],
   },
   assetPrefix: '/blog',
+  basePath: '/blog',
 };
