@@ -2,5 +2,5 @@ module.exports = {
   outputFileTracingIncludes: {
     '/*': ['./content/**/*'],
   },
-  basePath: '/blog',
+  assetPrefix: '/blog',
 };
