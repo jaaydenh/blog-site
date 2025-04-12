@@ -1,0 +1,166 @@
+---
+title: "Frontend Dev in 2025: How AI Tools Are Changing My Workflow"
+abstract: Large Language Models (LLMs) like GPT-4 and Claude are transforming frontend web development. This article explores practical lessons from using AI-driven coding tools, discussing their strengths, limitations, and future improvements. It highlights differences in developer perspectives, recommends effective AI tools and practices, and provides tips for managing context and constructing prompts.
+publishedOn: "2025-04-12T12:00:00-0400"
+---
+
+## Introduction
+
+Large Language Models (LLMs), such as GPT-4 and Claude, are dramatically reshaping frontend development workflows. After extensive exploration and experimentation, I've gathered insights into their practical effectiveness, strengths, limitations, and future potential.
+
+## Why learn about AI-based coding?
+
+Learning AI-driven coding tools feels like investing in the future. AI coding not only accelerates rapid prototyping but also allows developers to quickly experiment with ideas that might otherwise take much longer using traditional coding methods. For example, generating boilerplate React components or CSS-to-Tailwind conversions now takes seconds instead of hours.
+
+## Intended audience
+
+This article caters to developers, both novice and experienced, who might be less familiar with the rapid advances in AI from 2024-2025. If you're curious about the full range of tools and practices available, this guide will help you navigate the landscape and make informed choices.
+
+## The AI efficacy elephant in the room
+
+AI effectiveness varies significantly depending on the task. For straightforward tasks like creating initial UI layouts or migrating existing components between frameworks, AI excels. However, for nuanced tasks involving highly customized logic or legacy systems with limited exposure to LLM training data, the results may be limited. However, considering the rapid evolution, expecting continual improvements is reasonable.
+
+## Why opinions on AI for coding differ
+
+Perspectives on AI’s usefulness differ widely between two primary developer archetypes:
+
+- **Craftsmen** focus on code ergonomics, long-term maintainability, reduced technical debt, and thorough testing practices. They often question AI’s ability to produce robust and maintainable code.
+  - *Example:* A craftsman might hesitate to accept AI-generated code without extensive refactoring and testing.
+- **Entrepreneurs** prioritize speed, experimentation, and rapid user feedback. Technical debt is managed through a cost-value lens rather than being inherently problematic.
+  - *Example:* An entrepreneur might quickly leverage AI to prototype multiple app variants and iterate based on user feedback.
+
+&nbsp;![Craftsman to Entrepreneur](/blog/craftsman-vs-entrprenuer.png)&nbsp;
+
+This is a spectrum and its possible to have traits of both the craftsman and the entrepreneur. What this offers is a mental model for understanding general sentiment towards AI.
+
+Additionally, refer to [The LLM Curve of Impact](https://serce.me/posts/2025-02-07-the-llm-curve-of-impact-on-software-engineers) for another take based on the experience level of the developer.
+
+## Why will AI improve?
+
+AI coding will undoubtedly improve due to several converging factors:
+
+- **Agent-based architectures**: Agents (Augmented LLM running in a loop) that iteratively refine outputs will become foundational for frontend dev workflows, dramatically enhancing coding accuracy and utility.
+- **Multi-agent orchestration**: Coordination between specialized AI agents for design\architecture, coding, and testing will allow for better management of context and better verification of results.
+- **Enhanced context management**: Improvements in techniques like context compression will enable handling complex tasks that currently exceed AI rate limits and context windows.
+- **Improved validation methods**: Automated verification and feedback loops will boost trust in AI-generated code.
+
+## Recommended AI tools for coding
+
+Here's a brief overview of impactful tools:
+
+- **AI IDEs**: [Cursor](https://www.cursor.com/), [Windsurf Editor](https://codeium.com/windsurf)
+- **IDE Extensions**: [Cline](https://github.com/cline/cline)
+- **Terminals**: [Warp](https://www.warp.dev/)
+- **CLI Agents**: [Goose](https://github.com/block/goose), [Aider](https://aider.chat/), [Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview), [OpenHands](https://docs.all-hands.dev/).
+- **Visual Prototyping**: [v0](https://v0.dev/), [bolt](https://bolt.new/), [lovable](https://lovable.dev/), [manus](https://manus.im/)
+
+## Leaderboards: evaluating AI tools
+
+- SWE-bench - [https://www.swebench.com/](https://www.swebench.com/)
+- Aider LLM Leaderboards - [https://aider.chat/docs/leaderboards/](https://aider.chat/docs/leaderboards/)
+- Chatbot Arena Leaderboards - [https://lmarena.ai/?leaderboard](https://lmarena.ai/?leaderboard)
+- Seal LLM Leaderboards - [https://scale.com/leaderboard](https://scale.com/leaderboard)
+
+## Best practices for AI coding
+
+To maximize AI effectiveness:
+
+- Prioritize strong typing (e.g., TypeScript), linting, and automated tests as AI tools make use of these to verify code.
+- Select technology stacks with ample AI training data, such as React, TypeScript, shadcn/ui, Next.js, and Supabase.
+- Use supplementary context files (e.g., markdown documents, cursor rules) to guide AI performance more effectively.
+
+## MCP Servers
+
+Model Context Protocol (MCP) is a standardized protocol that connects AI agents to external tools and datasources. A lot has already been wrriten about this.
+
+## Tips for constructing effective prompts
+
+- Correct terminology helps
+- Reference relevant files
+- Make sure web search is used if new tech is part of the prompt or solution
+- Successful one-shot prompts are the exception
+- Ask for followup clarifying questions. Some tools such as "Ask mode" in Cursor may do this automatically.
+- Use examples - code blocks, function signatures, json payloads
+
+## Practical Workflow for AI Coding
+
+1. **Identify Suitable Tasks**: Tasks I want to do faster, make greate experiments, I don't want to do or can't justify the time doing it manually.
+2. **Create the Experiment**: Prompt inside the IDE, agents in the CLI, or dedicated chat apps (ChatGPT\Claude).
+3. **Run and Track Experiments**: Document prompts, agents used, tools (MCP server), costs, amount of context window used.
+4. **Evaluate Outcomes**: Measure success through manual reviews, tests, and quantitative metrics.
+5. **Refine Context**: Continuously improve context presentation and management through markdown files, code comments, tool use (MCP servers).
+
+## Effective Use Cases
+
+Proven AI strengths include:
+
+- CSS-to-Tailwind conversions
+- Using less well known CSS Rules
+- React component boilerplate generation, extracting components
+- Code refactoring (e.g., migrating Material UI to shadcn/ui)
+- Automating documentation and test generation
+- Create design docs/RFCs/specs
+- Prototyping UI with bolt.net, lovable.dev, manus.im
+
+## Tips for handling misunderstandings (AI hallucinations)
+
+- Ask for an explanation of the code
+- Ask for alternative solutions
+- Ask in the chat for clarifying questions before providing the solution
+- Clear the context (i.e. new chat window) and try again
+- Use a different model (check LLM leaderboards)
+
+## Pitfalls and limitations
+
+Be mindful of:
+
+- AI limitations in handling bleeding-edge technologies released after the training cut-off date. For example, will often offer solutions based on older versions of frameworks and libraries.
+- Large files can lead to exceeding context windows.
+- AI is still not effective at having vision into the the UI and therefore can make design mistakes.
+
+## Vibe coding
+
+One of the best uses for "vibe coding" is to accelerate intuition-building through fast iteration cycles which makes it ideal for prototyping even at the cost of some initial precision.
+
+## The future of software engineering
+
+Expect a shift where junior developers increasingly manage AI tools and contexts, freeing senior engineers to focus on more complex and strategic challenges. Understanding how to effectively prompt and manage AI tools will be an essential skill.
+
+## Questions to consider
+
+- How will widespread AI usage affect codebase architecture?
+- Can locally-run AI models effectively support frontend development tasks?
+
+&nbsp;
+
+---
+
+### References:
+
+- Building an Agentic System - https://github.com/gerred/building-an-agentic-system
+- How to
+  - https://www.seangoedecke.com/how-i-use-llms/
+  - https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/
+  - https://www.nickcraux.com/blog/cursor-tips
+  - https://simonwillison.net/2025/Mar/11/using-llms-for-code/
+- Insights
+  - https://serce.me/posts/2025-02-07-the-llm-curve-of-impact-on-software-engineers
+- Research
+  - https://magazine.sebastianraschka.com/p/state-of-llm-reasoning-and-inference-scaling
+- Talks
+  - https://gitnation.com/contents/the-ai-assisted-developer-workflow-build-faster-and-smarter-today
+- Perspectives
+  - https://rafaelquintanilha.com/is-claude-code-worth-the-hype-or-just-expensive-vibe-coding
+  - https://rafaelquintanilha.com/are-ai-assistants-making-us-worse-programmers/
+- MCP workshop video - https://www.youtube.com/watch?v=kQmXtrmQ5Zg
+- MCP Server collections
+  - https://github.com/modelcontextprotocol/servers
+  - https://mcp.so
+- Prompt Compression - https://medium.com/@sahin.samia/prompt-compression-in-large-language-models-llms-making-every-token-count-078a2d1c7e03
+- Context/Rules
+  - https://github.com/PatrickJS/awesome-cursorrules
+  - https://cursor.directory/
+  - https://dotcursorrules.com/
+- Vibe Coding
+  - https://alitu.com/creator/workflow/what-is-vibe-coding
+  - https://alexp.pl/2025/02/19/vibe-coding.html
