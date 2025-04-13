@@ -36,10 +36,10 @@ function Footer() {
           <h2 className={styles.linkHeading}>Links</h2>
           <ul className={styles.linkList}>
             <li>
-              <Link href="/rss">RSS feed</Link>
+              <Link href="/rss.xml">RSS feed</Link>
             </li>
             <li>
-              <Link href="/">Portfolio</Link>
+              <Link href="https://jaayden.com/">Portfolio</Link>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/jaaydenhalko/">

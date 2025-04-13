@@ -1,4 +1,5 @@
 export const BLOG_TITLE = 'Jaayden Halko';
+export const BLOG_DESCRIPTION = 'Jaayden Halko\'s blog';
 export const COLOR_THEME_COOKIE_NAME = 'color-theme';
 
 export const LIGHT_COLORS = {
